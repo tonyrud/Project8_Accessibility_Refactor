@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
@@ -19,22 +19,36 @@
     </div>
 
     <header>
+      <h1>Accessible Frog</h1>
+      <h3>we make awesome music</h3>
     </header>
 
     <main>
-      <p class= "heading">Survey</p>
+      <h1 class= "heading">Survey</h1>
       <div class="card">
         <div class="flex">
           <img class="photo" src= "img/concert01.jpg">
           <div class="container">
             <form class = "survey">
-              <p>Who is your favorite band member:</p>
-              <input type="radio" name="res" value="John"> John
-              <input type="radio" name="res" value="Hazzard"> Hazzard
-              <input type="radio" name="res" value="Bob"> Bob
-              <input type="radio" name="res" value="Sally"> Sally
+              <h3>Who is your favorite band member:</h3>
+              <div class="radio">
+                <input type="radio" name="res" value="John" id="john"><label for="john">John</label>
+              </div>
+              <div class="radio">
+                <input type="radio" name="res" value="Hazzard" id="hazzard"><label for="hazzard">Hazzard</label>
+              </div>
+              <div class="radio">
+                <input type="radio" name="res" value="Bob" id="bob"><label for="bob">Bob</label>
+              </div>
+              <div class="radio">
+                <input type="radio" name="res" value="Sally" id="sally"><label for="sally">Sally</label>
+              </div>
 
-              <p>What is your favorite album:</p>
+
+
+
+
+              <label class="block-label" for="albums">What is your favorite album:</label>
               <select id="albums" name="select">
                 <option value="1">Party For An Angel</option>
                 <option value="2">A Day Of Old</option>
@@ -49,21 +63,21 @@
                 <option value="11">Street Of The Rider</option>
               </select>
 
-              <p>What is your favorite song:</p>
-              <textarea></textarea>
+              <label class="block-label" for="text-favsong">What is your favorite song:</label>
+              <textarea id="text-favsong"></textarea>
             </form>
           </div>
         </div>
       </div>
-      <p class= "heading">Newsletter</p>
+      <h1 class= "heading">Newsletter</h1>
       <div class="card">
         <div class="flex">
           <img class="photo" src= "img/the_band.jpg">
             <div class="container">
               <form class="newsletter">
-                  <p>Name: <input type ="text" name="textfield"></p>
-                  <p>Email: <input type ="email" name="textfield"></p>
-                  <p>Retype Email: <input type ="email" name="textfield"></p>
+                  <label for="name">Name: <input id="name" type ="text" name="textfield"></label>
+                  <label for="email">Email: <input id="email" type ="email" name="textfield"></label>
+                  <label for="retype">Retype Email: <input id="retype" type ="email" name="textfield"></label>
                   <button type="submit">Sign Up</button>
               </form>
             </div>
@@ -73,9 +87,9 @@
 
     <footer>
       <ul>
-        <li><a href="#" class="social twitter"><img src= "img/twitter-32.png"></a></li>
-        <li><a href="#" class="social youtube"><img src= "img/youtube-32.png"></a></li>
-        <li><a href="#" class="social spotify"><img src= "img/spotify-32.png"></a></li>
+        <li><a href="#" class="social twitter"><img src= "img/twitter-32.png" alt="image of twitter icon"></a></li>
+        <li><a href="#" class="social youtube"><img src= "img/youtube-32.png" alt="image of youtube icon"></a></li>
+        <li><a href="#" class="social spotify"><img src= "img/spotify-32.png" alt="image of spotify icon"></a></li>
       </ul>
       <p class="copyright">Copyright 2015, Accessible Frog</p>
     </footer>

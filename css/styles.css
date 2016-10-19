@@ -8,7 +8,7 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  color: #3A6355;
+  color: #b2f9df;
   background: #2d2b30;
 }
 
@@ -16,11 +16,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #999;
+  color: #ccc;
 }
 
 a:hover {
-  color: #999;
+  color: #ccc;
 }
 
 /* Section Styles */
@@ -54,21 +54,37 @@ a:hover {
   padding: 5px 10px 10px 10px;
 }
 
-.nav a {
+.nav a,
+.information a,
+.card {
   transition: all .5s;
 }
 
 .nav a:hover {
-  color: white
+  color: white;
 }
 
 header {
   text-align: center;
-  background: url('../img/concert02_with_text.jpg') no-repeat top center ;
+  background: url('../img/concert02_no_text.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
   height: 350px;
+}
+
+header h1 {
+  color: #323232;
+  margin: 78px 0 0 0;
+  font-size: 4em;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+header h3 {
+  color: #781126;
+  font-size: 2em;
+  margin: 25px;
 }
 
 .tag {
@@ -78,7 +94,7 @@ header {
 }
 
 .name{
-  font-weight: 300;
+  font-weight: bold;
 }
 
 header .name{
@@ -88,18 +104,18 @@ header .name{
   font-weight: 600;
   padding: 20px;
   text-transform: uppercase;
-  color: #781125
+  color: #b2def9;
 }
 
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
   text-align: left;
-  border-top: 4px solid #781125;
+  border-top: 4px solid #ccd9e1;
   clear: both;
 }
 .card:hover {
-  border-color: #96731A;
+  border-color: #706161;
 }
 
 
@@ -110,17 +126,33 @@ header .name{
   margin: 0 auto;
 }
 
-.information{
+.information {
   width: 100%;
   text-align: center;
   /*display: inline-block;
   position: absolute;*/
 }
 
+.information a {
+  border: 1px solid;
+  padding: 10px;
+  margin: 2em 0 0 0;
+  display: block;
+  width: 30%;
+  text-align: center;
+  font-weight: bold;
+  border-radius: .25em;
+  display: block;
+}
+
+.information a:hover {
+  color: white;
+}
+
 .heading{
   font-size: 2em;
   text-transform: uppercase;
-  color: #781125;
+  color: #b2def9;
   margin-top: 10px;
 }
 
@@ -157,7 +189,7 @@ a.social {
   transition: all .5s;
 }
 
-a.twitter {
+/*a.twitter {
   background-image: url(../img/twitter-32.png);
 }
 
@@ -167,7 +199,7 @@ a.youtube {
 
 a.spotify {
   background-image: url(../img/spotify-32.png);
-}
+}*/
 
 a.social:hover {
   opacity: 1;
@@ -220,9 +252,18 @@ a.social:hover {
     text-align: left;
   }
 
+  .information a {
+    margin: 2em 0 0 0;
+    width: 180px;
+  }
+
   footer {
     font-size: 1.3em;
     max-width: 1200px;
     margin: 40px auto;
   }
+}
+
+@media (max-width: 768px) {
+
 }
