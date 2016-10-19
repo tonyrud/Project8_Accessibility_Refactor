@@ -56,7 +56,8 @@ a:hover {
 
 .nav a,
 .information a,
-.card {
+.card,
+button {
   transition: all .5s;
 }
 
@@ -129,8 +130,6 @@ header .name{
 .information {
   width: 100%;
   text-align: center;
-  /*display: inline-block;
-  position: absolute;*/
 }
 
 .information a {
@@ -146,7 +145,8 @@ header .name{
 }
 
 .information a:hover {
-  color: white;
+  color: #2d2b30;
+  background: #b2f9df;
 }
 
 .heading{
@@ -188,18 +188,6 @@ a.social {
   opacity: .4;
   transition: all .5s;
 }
-
-/*a.twitter {
-  background-image: url(../img/twitter-32.png);
-}
-
-a.youtube {
-  background-image: url(../img/youtube-32.png);
-}
-
-a.spotify {
-  background-image: url(../img/spotify-32.png);
-}*/
 
 a.social:hover {
   opacity: 1;

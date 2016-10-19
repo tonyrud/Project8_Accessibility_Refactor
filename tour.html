@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+  <link rel="icon"
+    type="image/png"
+    href="img/fav_icon.png">
     <meta charset="utf-8">
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <link href="css/tour.css" rel="stylesheet" type="text/css" />
@@ -11,7 +14,7 @@
 </head>
 
 <body>
-    <div class="main-nav">
+    <div class="main-nav" role="navigation">
         <ul class="nav">
             <li class="name"><a href="index.html">Accessible Frog</a></li>
             <li><a href="#">Tour</a></li>
@@ -19,7 +22,7 @@
         </ul>
     </div>
 
-    <header>
+    <header role="banner">
         <h1>Accessible Frog</h1>
         <h3>we make awesome music</h3>
     </header>
@@ -32,7 +35,7 @@
                 <img class="pick" src="img/guitar_pick.png" alt="">
                 <h1 class="heading">Tour Dates</h1>
                 <img class="pick" src="img/guitar_pick.png" alt="">
-                <table summary="Upcoming tour dates" id="tour_table">
+                <table id="tour_table" role="grid">
                     <caption>Our upcoming tour dates</caption>
                     <thead>
                         <tr>
@@ -68,7 +71,7 @@
         </div>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <ul>
             <li>
                 <a href="#" class="social twitter"><img src="img/twitter-32.png" alt="image of twitter icon"></a>
